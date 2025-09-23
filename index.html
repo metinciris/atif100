@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eylül 2025 Öğretim Yılına Girerken En Çok Atıf Alan Patoloji Uzmanları</title>
+    <title>2025-26 Öğretim Yılına Girerken En Çok Alıntıya Sahip Patoloji Uzmanları</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -87,17 +87,19 @@
             font-weight: 700;
             color: #333;
             position: relative;
+            padding-left: 2.5rem;
         }
         .top-3::before {
             content: "👑";
             position: absolute;
             top: 50%;
-            left: 10px;
+            left: 0.5rem;
             transform: translateY(-50%);
             font-size: 1.5rem;
         }
         .top-3 .rank {
             color: #333;
+            width: 60px;
         }
         .group-2000 {
             background-color: #fce7f3; /* Pembe tonu */
@@ -119,7 +121,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1 class="text-3xl font-extrabold text-gray-900">Eylül 2025 Öğretim Yılına Girerken En Çok Atıf Alan Patoloji Uzmanları</h1>
+            <h1 class="text-3xl font-extrabold text-gray-900">2025-26 Öğretim Yılına Girerken En Çok Alıntıya Sahip Patoloji Uzmanları</h1>
             <p class="mt-2 text-gray-600">Bu liste, Google Scholar verileri kullanılarak oluşturulmuştur.</p>
         </div>
 
@@ -136,106 +138,107 @@
     <script>
         // Sağlanan verilerden veteriner hekimler çıkarılarak oluşturulan liste
         const data = [
-            { rank: 1, name: "Funda Yılmaz", institution: "Ege Üniversitesi Tıp Fakültesi", citations: 3401 },
-            { rank: 2, name: "Pelin Bağcı", institution: "Marmara Üniversitesi Tıp Fakültesi Patoloji", citations: 3340 },
-            { rank: 3, name: "Murat Alper", institution: "Sağlık Bilimleri Üniversitesi, Ankara Etlik Şehir Hastanesi", citations: 3211 },
-            { rank: 4, name: "Özlem Yapıcıer", institution: "Bahçeşehir Üniversitesi Tıp Fakültesi", citations: 2693 },
-            { rank: 5, name: "Osman Zekioglu", institution: "Ege Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 2687 },
-            { rank: 6, name: "Enver Vardar", institution: "Patoloji", citations: 2612 },
-            { rank: 7, name: "Buyukbabani Nesimi", institution: "İstanbul Üniversitesi İstanbul Tıp Fakültesi Patoloji", citations: 2517 },
-            { rank: 8, name: "Bulent Celasun", institution: "Gülhane Askeri Tıp Akademisi, Başkent Üniversitesi Tıp Fakültesi", citations: 2147 },
-            { rank: 9, name: "Leyla Memis", institution: "Gazi Tıp Fakültesi Tıbbi Patoloji", citations: 2105 },
-            { rank: 10, name: "Fahri Yılmaz", institution: "SAEH Tıbbi Patoloji", citations: 2052 },
-            { rank: 11, name: "Metin Çiriş", institution: "Süleyman Demirel Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 2033 },
-            { rank: 12, name: "Figen Barut", institution: "Zonguldak Bülent Ecevit Üniversitesi Tıp Fakültesi", citations: 1977 },
-            { rank: 13, name: "Hacı Hasan Esen", institution: "Necmettin Erbakan Üniversitesi Meram Tıp Fakültesi", citations: 1960 },
-            { rank: 14, name: "Şahsine Tolunay", institution: "Uludağ Üniversitesi Tıp Fakültesi", citations: 1942 },
-            { rank: 15, name: "Sait Sen", institution: "Ege Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 1836 },
-            { rank: 16, name: "Figen Öztürk", institution: "Erciyes Üniversitesi Patoloji", citations: 1760 },
-            { rank: 17, name: "Burak Bahadir", institution: "Zonguldak Bülent Ecevit Üniversitesi Tıp Fakültesi", citations: 1701 },
-            { rank: 18, name: "Fatma Hüsniye Dilek", institution: "İzmir Katip Çelebi Üniversitesi Tıp Fakültesi", citations: 1483 },
-            { rank: 19, name: "Aylar Poyraz", institution: "Gazi Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 1422 },
-            { rank: 20, name: "Nese Demirkan", institution: "Pamukkale Üniversitesi", citations: 1385 },
-            { rank: 21, name: "Mustafa Kösem", institution: "Sakarya Üniversitesi", citations: 1307 },
-            { rank: 22, name: "Cumhur İbrahim Başsorgun", institution: "Akdeniz Üniversitesi Tıp Fakültesi", citations: 1281 },
-            { rank: 23, name: "Nilüfer Onak Kandemir", institution: "Ankara Şehir Hastanesi Tıbbi Patoloji", citations: 1252 },
-            { rank: 24, name: "Mine Hekimgil", institution: "Ege Üniversitesi Tıp Fakültesi, Tıbbi Patoloji", citations: 1147 },
-            { rank: 25, name: "Fulya Oz Puyan", institution: "Trakya Üniversitesi Tıp Fakültesi Patoloji", citations: 1125 },
-            { rank: 26, name: "Neşe Karadağ", institution: "İnönü Üniversitesi Tıp Fakültesi", citations: 1095 },
-            { rank: 27, name: "Olgun Kontaş", institution: "Erciyes Üniversitesi Tıp Fakültesi Patoloji", citations: 1042 },
-            { rank: 28, name: "Dilek Yavuzer", institution: "Sağlık Bilimleri Üniversitesi", citations: 995 },
-            { rank: 29, name: "Betül Gündoğdu", institution: "Atatürk Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 951 },
-            { rank: 30, name: "Tülin Yalta", institution: "Trakya Üniversitesi Patoloji", citations: 947 },
-            { rank: 31, name: "Kayhan Başak", institution: "Sağlık Bilimleri Üniversitesi, Kartal Dr. Lütfi Kırdar Şehir Hastanesi", citations: 922 },
-            { rank: 32, name: "Yurdanur Sullu", institution: "Ondokuz Mayıs Üniversitesi Tıp Fakültesi Patoloji", citations: 919 },
-            { rank: 33, name: "Mehmet Yaldız", institution: "Mersin Üniversitesi Tıp Fakültesi", citations: 911 },
-            { rank: 34, name: "Gökhan Artaş", institution: "Fırat Üniversitesi Tıp Fakültesi, Patoloji", citations: 847 },
-            { rank: 35, name: "Özgür İlhan Çelik", institution: "Muğla Sıtkı Koçman Üniversitesi Tıp Fakültesi", citations: 822 },
-            { rank: 36, name: "Recep Bedir", institution: "Recep Tayyip Erdoğan Üniversitesi, Tıp Fakültesi Tıbbi Patoloji", citations: 816 },
-            { rank: 37, name: "Sare Şipal", institution: "Atatürk Üniversitesi Tıp Fakültesi Patoloji", citations: 782 },
-            { rank: 38, name: "sirin baspinar", institution: "Süleyman Demirel Üniversitesi Tıp Fakültesi, Tıbbi Patoloji", citations: 750 },
-            { rank: 39, name: "Sıdıka Fındık", institution: "Necmettin Erbakan Üniversitesi Meram Tıp Fakültesi Tıbbi Patoloji", citations: 744 },
-            { rank: 40, name: "Armagan Gunal", institution: "Sağlık Bilimleri Üniversitesi Tıbbi Patoloji", citations: 731 },
-            { rank: 41, name: "Ersin Tuncer", institution: "Sivas Cumhuriyet Üniversitesi Tıp Fakültesi", citations: 667 },
-            { rank: 42, name: "Nagihan Yalçın", institution: "Pamukkale Üniversitesi", citations: 651 },
-            { rank: 43, name: "Ünsal Han", institution: "Dışkapı Ankara YB Eğitim Araştırma Hastanesi", citations: 648 },
-            { rank: 44, name: "Filiz Özyilmaz", institution: "Trakya Üniversitesi Tıp Fakültesi, Patoloji", citations: 609 },
-            { rank: 45, name: "Erdogdu İh", institution: "Aydın Adnan Menderes Üniversitesi Patoloji", citations: 607 },
-            { rank: 46, name: "Mehmet Akif Çiftcioğlu", institution: "Çiftcioğlu Patoloji Merkezi", citations: 583 },
-            { rank: 47, name: "Hasan Gökçe", institution: "İnönü Üniversitesi Patoloji", citations: 574 },
-            { rank: 48, name: "Ramazan Uçak", institution: "SBÜ Şişli Hamidiye Etfal SUAM Patoloji Bölümü", citations: 554 },
-            { rank: 49, name: "Mustafa Kemal Çiftçi", institution: "İstanbul Gelişim Üniversitesi", citations: 544 },
-            { rank: 50, name: "Mehmet Reşat Özercan", institution: "Adıyaman Üniversitesi Tıbbi Patoloji", citations: 502 },
-            { rank: 51, name: "Arzu Avcı", institution: "İzmir Tınaztepe Üniversitesi Tıp Fakültesi", citations: 500 },
-            { rank: 52, name: "Kadriye Yıldız", institution: "Karadeniz Teknik Üniversitesi Patoloji", citations: 494 },
-            { rank: 53, name: "Saadet Alan", institution: "İnönü Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 474 },
-            { rank: 54, name: "Gülzade Karaman", institution: "Özel Biyotıp Patoloji Laboratuvarı", citations: 469 },
-            { rank: 55, name: "Yasemen Adalı Ruşen", institution: "İzmir Demokrasi Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 463 },
-            { rank: 56, name: "Anil Aysal", institution: "Dokuz Eylül Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 454 },
-            { rank: 57, name: "Pınar Celepli", institution: "Sağlık Bakanlığı Gülhane Eğitim ve Araştırma Hastanesi", citations: 448 },
-            { rank: 58, name: "Gulname Findik Guvendi", institution: "Recep Tayyip Erdoğan Üniversitesi Tıp Fakültesi Patoloji", citations: 445 },
-            { rank: 59, name: "Pelin Yıldız", institution: "Acıbadem Üniversitesi, Patoloji Bölümü", citations: 443 },
-            { rank: 60, name: "Emel Çakır", institution: "Karadeniz Teknik Üniversitesi Tıp Fakültesi Patoloji", citations: 441 },
-            { rank: 61, name: "Servet Guresci", institution: "Ankara Bilkent Şehir Hastanesi", citations: 435 },
-            { rank: 62, name: "Büşra Yaprak Bayrak", institution: "Kocaeli Üniversitesi Tıp Fakültesi Patoloji", citations: 413 },
-            { rank: 63, name: "Sevinç Çelik Şahin", institution: "KEYKUBAT ÜNİVERSİTESİ TIP FAKÜLTESİ", citations: 408 },
-            { rank: 64, name: "Serra Kayaçetin", institution: "Ankara Atatürk Eğitim ve Araştırma Hastanesi", citations: 386 },
-            { rank: 65, name: "Mehmet Alpaslan Gönültaş", institution: "Ankara Hastanesi", citations: 383 },
-            { rank: 66, name: "Gülden Diniz", institution: "İzmir Demokrasi Üniversitesi", citations: 338 },
-            { rank: 67, name: "Elife Sahan Kımıloğlu", institution: "İstinye Üniversitesi, Tıp Fakültesi", citations: 319 },
-            { rank: 68, name: "Betül Öğüt", institution: "Gazi Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 317 },
-            { rank: 69, name: "Mustafa Emre Ercin", institution: "Karadeniz Teknik Üniversitesi Tıp Fakültesi", citations: 304 },
-            { rank: 70, name: "Aydın İsişag", institution: "Manisa Celal Bayar Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 279 },
-            { rank: 71, name: "Uguray Payam Hacisalihoglu", institution: "İstanbul Aydın Üniversitesi Tıp Fakültesi", citations: 271 },
-            { rank: 72, name: "Serhat Toprak", institution: "İnönü üniversitesi Tıp Fakültesi", citations: 266 },
-            { rank: 73, name: "Akgül Arici", institution: "Tokat Gaziosmanpaşa Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 253 },
-            { rank: 74, name: "Yetkin Ağaçkıran", institution: "SBÜ. Patoloji", citations: 242 },
-            { rank: 75, name: "Remzi Arslan", institution: "Atatürk Üniversitesi Tıp Fakültesi Patoloji", citations: 238 },
-            { rank: 76, name: "Davut Şahin", institution: "Acıbadem Üniversitesi", citations: 222 },
-            { rank: 77, name: "Saygın I", institution: "KTÜ Tıp Fakültesi Patoloji", citations: 206 },
-            { rank: 78, name: "Arzu Yıldırım ÖzlüK", institution: "Balıkesir Üniversitesi Tıp Fakültesi", citations: 198 },
-            { rank: 79, name: "Ahu Senem Demiröz", institution: "Cerrahpaşa Tıp Fakültesi, İstanbul Üniversitesi-Cerrahpaşa", citations: 196 },
-            { rank: 80, name: "Bedriye Nazli Erkencioglu", institution: "İstinye Üniversitesi", citations: 188 },
-            { rank: 81, name: "Seda Gun", institution: "Ondokuz Mayıs Üniversitesi Patoloji", citations: 182 },
-            { rank: 82, name: "Meryem İlkay Eren Karanis", institution: "Konya Şehir Hastanesi", citations: 173 },
-            { rank: 83, name: "Mahir Tayfur", institution: "Erzincan Binali Yıldırım Üniversitesi", citations: 165 },
-            { rank: 84, name: "Leyla Tekin", institution: "Muğla Sıtkı Koçman Üniversitesi Patoloji", citations: 146 },
-            { rank: 85, name: "Eruyar AT", institution: "Kocaeli Üniversitesi Tıp Fakültesi Patoloji", citations: 135 },
-            { rank: 86, name: "Deniz Çavuşoğlu", institution: "Etlik Zübeyde Hanım Kadın Hastalıkları EA Hastanesi", citations: 123 },
-            { rank: 87, name: "Bahattin Erdoğan", institution: "Eskişehir Şehir Hastanesi", citations: 118 },
-            { rank: 88, name: "Meltem Azatcam", institution: "Lüleburgaz Devlet Hastanesi Tıbbi Patoloji", citations: 118 },
-            { rank: 89, name: "Gamze Erkılınç", institution: "İzmir Bakırçay Üniversitesi Tıp Fakültesi", citations: 101 },
-            { rank: 90, name: "Şenay Erdoğan Durmuş", institution: "Sitopatoloji Yandal Uzmanı", citations: 94 },
-            { rank: 91, name: "Zeynep Sağnak Yılmaz", institution: "Karadeniz Teknik Üniversitesi Tıp Fakültesi", citations: 78 },
-            { rank: 92, name: "Fatma Zeynep Özen", institution: "Amasya Üniversitesi", citations: 65 },
-            { rank: 93, name: "Özge Basaran Aydogdu", institution: "Ankara Şehir Hastanesi Tıbbi Patoloji", citations: 60 },
-            { rank: 94, name: "Rabia Demirtaş", institution: "Atatürk Üniversitesi Tıp Fakültesi Patoloji", citations: 56 },
-            { rank: 95, name: "Ufkay Karabay", institution: "İzmir Tınaztepe Üniversitesi Sağlık Hizmetleri MYO", citations: 56 },
-            { rank: 96, name: "Gökçe Hande Çavuş", institution: "Cerrahpaşa Tıp Fakültesi Patoloji", citations: 54 },
-            { rank: 97, name: "Füruzan Döger", institution: "Adnan Menderes Üniversitesi", citations: 42 },
-            { rank: 98, name: "Zeynep Tarini", institution: "Sağlık Bilimleri Üniversitesi Tıbbi Patoloji", citations: 39 },
-            { rank: 99, name: "Elif Acar", institution: "Niğde Ömer Halis Demir Üniversitesi Eğitim ve Araştırma Hastanesi", citations: 28 },
-            { rank: 100, name: "Gülsün Gülten", institution: "Pamukkale Üniversitesi", citations: 26 }
+            { rank: 1, name: "Volkan Adsay", institution: "Koç University", citations: 57196 },
+            { rank: 2, name: "Funda Yılmaz", institution: "Ege Üniversitesi Tıp Fakültesi", citations: 3401 },
+            { rank: 3, name: "Pelin Bağcı", institution: "Marmara Üniversitesi Tıp Fakültesi Patoloji", citations: 3340 },
+            { rank: 4, name: "Murat Alper", institution: "Sağlık Bilimleri Üniversitesi, Ankara Etlik Şehir Hastanesi", citations: 3211 },
+            { rank: 5, name: "Özlem Yapıcıer", institution: "Bahçeşehir Üniversitesi Tıp Fakültesi", citations: 2693 },
+            { rank: 6, name: "Osman Zekioglu", institution: "Ege Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 2687 },
+            { rank: 7, name: "Enver Vardar", institution: "Patoloji", citations: 2612 },
+            { rank: 8, name: "Buyukbabani Nesimi", institution: "İstanbul Üniversitesi İstanbul Tıp Fakültesi Patoloji", citations: 2517 },
+            { rank: 9, name: "Bulent Celasun", institution: "Gülhane Askeri Tıp Akademisi, Başkent Üniversitesi Tıp Fakültesi", citations: 2147 },
+            { rank: 10, name: "Leyla Memis", institution: "Gazi Tıp Fakültesi Tıbbi Patoloji", citations: 2105 },
+            { rank: 11, name: "Fahri Yılmaz", institution: "SAEH Tıbbi Patoloji", citations: 2052 },
+            { rank: 12, name: "Metin Çiriş", institution: "Süleyman Demirel Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 2033 },
+            { rank: 13, name: "Figen Barut", institution: "Zonguldak Bülent Ecevit Üniversitesi Tıp Fakültesi", citations: 1977 },
+            { rank: 14, name: "Hacı Hasan Esen", institution: "Necmettin Erbakan Üniversitesi Meram Tıp Fakültesi", citations: 1960 },
+            { rank: 15, name: "Şahsine Tolunay", institution: "Uludağ Üniversitesi Tıp Fakültesi", citations: 1942 },
+            { rank: 16, name: "Sait Sen", institution: "Ege Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 1836 },
+            { rank: 17, name: "Figen Öztürk", institution: "Erciyes Üniversitesi Patoloji", citations: 1760 },
+            { rank: 18, name: "Burak Bahadir", institution: "Zonguldak Bülent Ecevit Üniversitesi Tıp Fakültesi", citations: 1701 },
+            { rank: 19, name: "Fatma Hüsniye Dilek", institution: "İzmir Katip Çelebi Üniversitesi Tıp Fakültesi", citations: 1483 },
+            { rank: 20, name: "Aylar Poyraz", institution: "Gazi Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 1422 },
+            { rank: 21, name: "Nese Demirkan", institution: "Pamukkale Üniversitesi", citations: 1385 },
+            { rank: 22, name: "Mustafa Kösem", institution: "Sakarya Üniversitesi", citations: 1307 },
+            { rank: 23, name: "Cumhur İbrahim Başsorgun", institution: "Akdeniz Üniversitesi Tıp Fakültesi", citations: 1281 },
+            { rank: 24, name: "Nilüfer Onak Kandemir", institution: "Ankara Şehir Hastanesi Tıbbi Patoloji", citations: 1252 },
+            { rank: 25, name: "Mine Hekimgil", institution: "Ege Üniversitesi Tıp Fakültesi, Tıbbi Patoloji", citations: 1147 },
+            { rank: 26, name: "Fulya Oz Puyan", institution: "Trakya Üniversitesi Tıp Fakültesi Patoloji", citations: 1125 },
+            { rank: 27, name: "Neşe Karadağ", institution: "İnönü Üniversitesi Tıp Fakültesi", citations: 1095 },
+            { rank: 28, name: "Olgun Kontaş", institution: "Erciyes Üniversitesi Tıp Fakültesi Patoloji", citations: 1042 },
+            { rank: 29, name: "Dilek Yavuzer", institution: "Sağlık Bilimleri Üniversitesi", citations: 995 },
+            { rank: 30, name: "Betül Gündoğdu", institution: "Atatürk Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 951 },
+            { rank: 31, name: "Tülin Yalta", institution: "Trakya Üniversitesi Patoloji", citations: 947 },
+            { rank: 32, name: "Kayhan Başak", institution: "Sağlık Bilimleri Üniversitesi, Kartal Dr. Lütfi Kırdar Şehir Hastanesi", citations: 922 },
+            { rank: 33, name: "Yurdanur Sullu", institution: "Ondokuz Mayıs Üniversitesi Tıp Fakültesi Patoloji", citations: 919 },
+            { rank: 34, name: "Mehmet Yaldız", institution: "Mersin Üniversitesi Tıp Fakültesi", citations: 911 },
+            { rank: 35, name: "Gökhan Artaş", institution: "Fırat Üniversitesi Tıp Fakültesi, Patoloji", citations: 847 },
+            { rank: 36, name: "Özgür İlhan Çelik", institution: "Muğla Sıtkı Koçman Üniversitesi Tıp Fakültesi", citations: 822 },
+            { rank: 37, name: "Recep Bedir", institution: "Recep Tayyip Erdoğan Üniversitesi, Tıp Fakültesi Tıbbi Patoloji", citations: 816 },
+            { rank: 38, name: "Sare Şipal", institution: "Atatürk Üniversitesi Tıp Fakültesi Patoloji", citations: 782 },
+            { rank: 39, name: "Sirin Baspinar", institution: "Süleyman Demirel Üniversitesi Tıp Fakültesi, Tıbbi Patoloji", citations: 750 },
+            { rank: 40, name: "Sıdıka Fındık", institution: "Necmettin Erbakan Üniversitesi Meram Tıp Fakültesi Tıbbi Patoloji", citations: 744 },
+            { rank: 41, name: "Armagan Gunal", institution: "Sağlık Bilimleri Üniversitesi Tıbbi Patoloji", citations: 731 },
+            { rank: 42, name: "Ersin Tuncer", institution: "Sivas Cumhuriyet Üniversitesi Tıp Fakültesi", citations: 667 },
+            { rank: 43, name: "Nagihan Yalçın", institution: "Pamukkale Üniversitesi", citations: 651 },
+            { rank: 44, name: "Ünsal Han", institution: "Dışkapı Ankara YB Eğitim Araştırma Hastanesi", citations: 648 },
+            { rank: 45, name: "Filiz Özyilmaz", institution: "Trakya Üniversitesi Tıp Fakültesi, Patoloji", citations: 609 },
+            { rank: 46, name: "Erdogdu İh", institution: "Aydın Adnan Menderes Üniversitesi Patoloji", citations: 607 },
+            { rank: 47, name: "Mehmet Akif Çiftcioğlu", institution: "Çiftcioğlu Patoloji Merkezi", citations: 583 },
+            { rank: 48, name: "Hasan Gökçe", institution: "İnönü Üniversitesi Patoloji", citations: 574 },
+            { rank: 49, name: "Ramazan Uçak", institution: "SBÜ Şişli Hamidiye Etfal SUAM Patoloji Bölümü", citations: 554 },
+            { rank: 50, name: "Mustafa Kemal Çiftçi", institution: "İstanbul Gelişim Üniversitesi", citations: 544 },
+            { rank: 51, name: "Mehmet Reşat Özercan", institution: "Adıyaman Üniversitesi Tıbbi Patoloji", citations: 502 },
+            { rank: 52, name: "Arzu Avcı", institution: "İzmir Tınaztepe Üniversitesi Tıp Fakültesi", citations: 500 },
+            { rank: 53, name: "Kadriye Yıldız", institution: "Karadeniz Teknik Üniversitesi Patoloji", citations: 494 },
+            { rank: 54, name: "Saadet Alan", institution: "İnönü Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 474 },
+            { rank: 55, name: "Gülzade Karaman", institution: "Özel Biyotıp Patoloji Laboratuvarı", citations: 469 },
+            { rank: 56, name: "Yasemen Adalı Ruşen", institution: "İzmir Demokrasi Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 463 },
+            { rank: 57, name: "Anil Aysal", institution: "Dokuz Eylül Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 454 },
+            { rank: 58, name: "Pınar Celepli", institution: "Sağlık Bakanlığı Gülhane Eğitim ve Araştırma Hastanesi", citations: 448 },
+            { rank: 59, name: "Gulname Findik Guvendi", institution: "Recep Tayyip Erdoğan Üniversitesi Tıp Fakültesi Patoloji", citations: 445 },
+            { rank: 60, name: "Pelin Yıldız", institution: "Acıbadem Üniversitesi, Patoloji Bölümü", citations: 443 },
+            { rank: 61, name: "Emel Çakır", institution: "Karadeniz Teknik Üniversitesi Tıp Fakültesi Patoloji", citations: 441 },
+            { rank: 62, name: "Servet Guresci", institution: "Ankara Bilkent Şehir Hastanesi", citations: 435 },
+            { rank: 63, name: "Büşra Yaprak Bayrak", institution: "Kocaeli Üniversitesi Tıp Fakültesi Patoloji", citations: 413 },
+            { rank: 64, name: "Sevinç Çelik Şahin", institution: "KEYKUBAT ÜNİVERSİTESİ TIP FAKÜLTESİ", citations: 408 },
+            { rank: 65, name: "Serra Kayaçetin", institution: "Ankara Atatürk Eğitim ve Araştırma Hastanesi", citations: 386 },
+            { rank: 66, name: "Mehmet Alpaslan Gönültaş", institution: "Ankara Hastanesi", citations: 383 },
+            { rank: 67, name: "Gülden Diniz", institution: "İzmir Demokrasi Üniversitesi", citations: 338 },
+            { rank: 68, name: "Elife Sahan Kımıloğlu", institution: "İstinye Üniversitesi, Tıp Fakültesi", citations: 319 },
+            { rank: 69, name: "Betül Öğüt", institution: "Gazi Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 317 },
+            { rank: 70, name: "Mustafa Emre Ercin", institution: "Karadeniz Teknik Üniversitesi Tıp Fakültesi", citations: 304 },
+            { rank: 71, name: "Aydın İsişag", institution: "Manisa Celal Bayar Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 279 },
+            { rank: 72, name: "Uguray Payam Hacisalihoglu", institution: "İstanbul Aydın Üniversitesi Tıp Fakültesi", citations: 271 },
+            { rank: 73, name: "Serhat Toprak", institution: "İnönü üniversitesi Tıp Fakültesi", citations: 266 },
+            { rank: 74, name: "Akgül Arici", institution: "Tokat Gaziosmanpaşa Üniversitesi Tıp Fakültesi Tıbbi Patoloji", citations: 253 },
+            { rank: 75, name: "Yetkin Ağaçkıran", institution: "SBÜ. Patoloji", citations: 242 },
+            { rank: 76, name: "Remzi Arslan", institution: "Atatürk Üniversitesi Tıp Fakültesi Patoloji", citations: 238 },
+            { rank: 77, name: "Davut Şahin", institution: "Acıbadem Üniversitesi", citations: 222 },
+            { rank: 78, name: "Saygın I", institution: "KTÜ Tıp Fakültesi Patoloji", citations: 206 },
+            { rank: 79, name: "Arzu Yıldırım ÖzlüK", institution: "Balıkesir Üniversitesi Tıp Fakültesi", citations: 198 },
+            { rank: 80, name: "Ahu Senem Demiröz", institution: "Cerrahpaşa Tıp Fakültesi, İstanbul Üniversitesi-Cerrahpaşa", citations: 196 },
+            { rank: 81, name: "Bedriye Nazli Erkencioglu", institution: "İstinye Üniversitesi", citations: 188 },
+            { rank: 82, name: "Seda Gun", institution: "Ondokuz Mayıs Üniversitesi Patoloji", citations: 182 },
+            { rank: 83, name: "Meryem İlkay Eren Karanis", institution: "Konya Şehir Hastanesi", citations: 173 },
+            { rank: 84, name: "Mahir Tayfur", institution: "Erzincan Binali Yıldırım Üniversitesi", citations: 165 },
+            { rank: 85, name: "Leyla Tekin", institution: "Muğla Sıtkı Koçman Üniversitesi Patoloji", citations: 146 },
+            { rank: 86, name: "Eruyar AT", institution: "Kocaeli Üniversitesi Tıp Fakültesi Patoloji", citations: 135 },
+            { rank: 87, name: "Deniz Çavuşoğlu", institution: "Etlik Zübeyde Hanım Kadın Hastalıkları EA Hastanesi", citations: 123 },
+            { rank: 88, name: "Bahattin Erdoğan", institution: "Eskişehir Şehir Hastanesi", citations: 118 },
+            { rank: 89, name: "Meltem Azatcam", institution: "Lüleburgaz Devlet Hastanesi Tıbbi Patoloji", citations: 118 },
+            { rank: 90, name: "Gamze Erkılınç", institution: "İzmir Bakırçay Üniversitesi Tıp Fakültesi", citations: 101 },
+            { rank: 91, name: "Şenay Erdoğan Durmuş", institution: "Sitopatoloji Yandal Uzmanı", citations: 94 },
+            { rank: 92, name: "Zeynep Sağnak Yılmaz", institution: "Karadeniz Teknik Üniversitesi Tıp Fakültesi", citations: 78 },
+            { rank: 93, name: "Fatma Zeynep Özen", institution: "Amasya Üniversitesi", citations: 65 },
+            { rank: 94, name: "Özge Basaran Aydogdu", institution: "Ankara Şehir Hastanesi Tıbbi Patoloji", citations: 60 },
+            { rank: 95, name: "Rabia Demirtaş", institution: "Atatürk Üniversitesi Tıp Fakültesi Patoloji", citations: 56 },
+            { rank: 96, name: "Ufkay Karabay", institution: "İzmir Tınaztepe Üniversitesi Sağlık Hizmetleri MYO", citations: 56 },
+            { rank: 97, name: "Gökçe Hande Çavuş", institution: "Cerrahpaşa Tıp Fakültesi Patoloji", citations: 54 },
+            { rank: 98, name: "Füruzan Döger", institution: "Adnan Menderes Üniversitesi", citations: 42 },
+            { rank: 99, name: "Zeynep Tarini", institution: "Sağlık Bilimleri Üniversitesi Tıbbi Patoloji", citations: 39 },
+            { rank: 100, name: "Elif Acar", institution: "Niğde Ömer Halis Demir Üniversitesi Eğitim ve Araştırma Hastanesi", citations: 28 },
+            { rank: 101, name: "Gülsün Gülten", institution: "Pamukkale Üniversitesi", citations: 26 }
         ];
 
         const rankingList = document.querySelector('.ranking-list');
@@ -262,10 +265,24 @@
 
             rankingItem.className = itemClass;
 
-            const formattedName = item.name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+            const formattedName = item.name.split(' ').map(word => {
+                if (word.length > 0) {
+                    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+                }
+                return word;
+            }).join(' ');
+
+            let rankContent = item.rank;
+            if (item.rank === 1) {
+                rankContent = '🥇';
+            } else if (item.rank === 2) {
+                rankContent = '🥈';
+            } else if (item.rank === 3) {
+                rankContent = '🥉';
+            }
 
             rankingItem.innerHTML = `
-                <div class="rank">${item.rank}</div>
+                <div class="rank">${rankContent}</div>
                 <div class="author-info">
                     <div class="author-name">${formattedName}</div>
                     <div class="author-institution">${item.institution}</div>
