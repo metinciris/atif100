@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025-26 Öğretim Yılına Girerken En Çok Alıntıya Sahip Patoloji Uzmanları</title>
+    <title>Eylül 2025 Öğretim Yılına Girerken En Çok Atıf Alan Patoloji Uzmanları</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -57,6 +57,7 @@
         .author-name {
             font-weight: 600;
             font-size: 1.125rem;
+            text-transform: capitalize;
         }
         .author-institution {
             font-size: 0.875rem;
@@ -82,13 +83,13 @@
             text-align: center;
         }
         .top-3 {
-            background: linear-gradient(135deg, #f0e68c, #ffd700, #ffc0cb);
+            background: linear-gradient(135deg, #ffd700, #ffec8b);
             font-weight: 700;
             color: #333;
             position: relative;
         }
         .top-3::before {
-            content: "👑 ";
+            content: "👑";
             position: absolute;
             top: 50%;
             left: 10px;
@@ -97,6 +98,21 @@
         }
         .top-3 .rank {
             color: #333;
+        }
+        .group-2000 {
+            background-color: #fce7f3; /* Pembe tonu */
+        }
+        .group-1000 {
+            background-color: #e0f2fe; /* Mavi tonu */
+        }
+        .group-500 {
+            background-color: #d1fae5; /* Yeşil tonu */
+        }
+        .group-250 {
+            background-color: #fef3c7; /* Sarı tonu */
+        }
+        .group-100 {
+            background-color: #eef2ff; /* Mor tonu */
         }
     </style>
 </head>
@@ -228,17 +244,30 @@
 
         data.forEach(item => {
             const rankingItem = document.createElement('div');
-            // İlk 3'ü farklı bir şekilde stilize et
+            let itemClass = 'ranking-item';
+
             if (item.rank <= 3) {
-                rankingItem.className = 'ranking-item top-3';
-            } else {
-                rankingItem.className = 'ranking-item';
+                itemClass += ' top-3';
+            } else if (item.citations >= 2000) {
+                itemClass += ' group-2000';
+            } else if (item.citations >= 1000) {
+                itemClass += ' group-1000';
+            } else if (item.citations >= 500) {
+                itemClass += ' group-500';
+            } else if (item.citations >= 250) {
+                itemClass += ' group-250';
+            } else if (item.citations >= 100) {
+                itemClass += ' group-100';
             }
+
+            rankingItem.className = itemClass;
+
+            const formattedName = item.name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 
             rankingItem.innerHTML = `
                 <div class="rank">${item.rank}</div>
                 <div class="author-info">
-                    <div class="author-name">${item.name}</div>
+                    <div class="author-name">${formattedName}</div>
                     <div class="author-institution">${item.institution}</div>
                 </div>
                 <div class="metrics">
